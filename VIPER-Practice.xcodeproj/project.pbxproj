@@ -13,6 +13,8 @@
 		9EB971CF2458F392002E7092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EB971CD2458F392002E7092 /* Main.storyboard */; };
 		9EB971D12458F394002E7092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB971D02458F394002E7092 /* Assets.xcassets */; };
 		9EB971D42458F394002E7092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EB971D22458F394002E7092 /* LaunchScreen.storyboard */; };
+		9EB971DD2458F820002E7092 /* ActivityListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB971DC2458F820002E7092 /* ActivityListController.swift */; };
+		9EB971E52458FA30002E7092 /* ActivityListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB971E42458FA30002E7092 /* ActivityListContract.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9EB971D02458F394002E7092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EB971D32458F394002E7092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EB971D52458F394002E7092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EB971DC2458F820002E7092 /* ActivityListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListController.swift; sourceTree = "<group>"; };
+		9EB971E42458FA30002E7092 /* ActivityListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListContract.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		9EB971C62458F392002E7092 /* VIPER-Practice */ = {
 			isa = PBXGroup;
 			children = (
+				9EB971DB2458F52E002E7092 /* ActivityListController */,
 				9EB971C72458F392002E7092 /* AppDelegate.swift */,
 				9EB971C92458F392002E7092 /* SceneDelegate.swift */,
 				9EB971CB2458F392002E7092 /* ViewController.swift */,
@@ -65,6 +70,47 @@
 				9EB971D52458F394002E7092 /* Info.plist */,
 			);
 			path = "VIPER-Practice";
+			sourceTree = "<group>";
+		};
+		9EB971DB2458F52E002E7092 /* ActivityListController */ = {
+			isa = PBXGroup;
+			children = (
+				9EB971E42458FA30002E7092 /* ActivityListContract.swift */,
+				9EB971E02458F99D002E7092 /* View */,
+				9EB971E12458F9A0002E7092 /* Presenter */,
+				9EB971E22458F9B6002E7092 /* Interactor */,
+				9EB971DE2458F991002E7092 /* Router */,
+			);
+			path = ActivityListController;
+			sourceTree = "<group>";
+		};
+		9EB971DE2458F991002E7092 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9EB971E02458F99D002E7092 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9EB971DC2458F820002E7092 /* ActivityListController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9EB971E12458F9A0002E7092 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9EB971E22458F9B6002E7092 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +186,9 @@
 			files = (
 				9EB971CC2458F392002E7092 /* ViewController.swift in Sources */,
 				9EB971C82458F392002E7092 /* AppDelegate.swift in Sources */,
+				9EB971E52458FA30002E7092 /* ActivityListContract.swift in Sources */,
 				9EB971CA2458F392002E7092 /* SceneDelegate.swift in Sources */,
+				9EB971DD2458F820002E7092 /* ActivityListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
